@@ -37,7 +37,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -142,7 +142,7 @@
 }
 
 .item > .entry-field[type = "text"] {
-  width: 226px
+  width: 226px;
 }
 
 .btn-image {
@@ -165,12 +165,12 @@
 /* Edit Task */
 
 .list > .item >.entry-field[type = "text"] {
-  display: none
+  display: none;
 }
 
 .list > .editMode > .entry-field[type = "text"] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list > .editMode > .task {
