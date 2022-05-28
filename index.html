@@ -5,22 +5,25 @@
     <link href = "https://fonts.googleapis.com/css?family=Lato:300,400,700" rel = "stylesheet">
     <link rel = "stylesheet" href = "style.css" media = "screen" charset = "utf-8">
   </head>
-  <body class = "body">
-    <div class = "header">
+  <body class = "wrapper">
+    <header class = "header">
       <img src = "./eisenhower-matrix.jpg" class = "header-image" alt = "logo">
       <a class = "more-inf" href = "https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class = "main-element">
-      <p id = "input-line">
-          <label class = "task" for = "new-task">Add Item</label>
-          <div class = "task-row-wrapper">
-            <input class = "entry-field task" id = "new-task" type = "text">
-            <button class = "button">Add</button>
-          </div>
-      </p>
-      <h3 class = "head-list">Todo</h3>
-      <ul class = "list" id = "incompleteTasks">
-        <li class = "item">
+    </header>
+    <main class = "main-element">
+      <section class = "add-input" id = "input-line">
+        <label class = "task" for = "new-task">
+          <h1 class = "title">Add Item</h1>
+        </label>
+        <div class = "task-row-wrapper">
+          <input class = "entry-field task" id = "new-task" type = "text">
+          <button class = "button">Add</button>
+        </div>
+      </section> 
+      <section class = "todo"> 
+        <h2 class = "head-list">Todo</h2>
+        <ul class = "list" id = "incompleteTasks">
+          <li class = "item">
             <input class = "entry-field" type = "checkbox">
             <label class = "task">Pay Bills</label>
             <input class = "entry-field task" type = "text">
@@ -28,8 +31,8 @@
             <button class = "button delete">
               <img src = "./remove.svg" class = "btn-image" alt = "icon">
             </button>
-        </li>
-        <li class = "item editMode">
+          </li>
+          <li class = "item editMode">
             <input class = "entry-field" type = "checkbox">
             <label class = "task">Go Shopping</label>
             <input class="entry-field task" type = "text" value = "Go Shopping">
@@ -37,21 +40,24 @@
             <button class = "button delete">
               <img src = "./remove.svg" class = "btn-image" alt = "icon">
             </button>
-        </li>
-      </ul>
-      <h3 class = "head-list">Completed</h3>
-      <ul class = "list" id = "completed-tasks">
-        <li class = item>
-          <input class = "entry-field" type = "checkbox" checked>
-          <label class = "task">See the Doctor</label>
-          <input class = "entry-field task" type = "text">
-          <button class = "button edit">Edit</button>
-          <button class = "button delete">
-            <img src = "./remove.svg" class = "btn-image" alt = "icon">
-          </button>
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </section>
+      <section class = "complete">
+        <h2 class = "head-list">Completed</h2>
+        <ul class = "list" id = "completed-tasks">
+          <li class = item>
+            <input class = "entry-field" type = "checkbox" checked>
+            <label class = "task">See the Doctor</label>
+            <input class = "entry-field task" type = "text">
+            <button class = "button edit">Edit</button>
+            <button class = "button delete">
+              <img src = "./remove.svg" class = "btn-image" alt = "icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
   <script src = "app.js"></script>
   </body>
 </html>
