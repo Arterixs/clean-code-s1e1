@@ -7,47 +7,47 @@
   </head>
   <body class = "body">
     <div class = "header">
-      <img src = "./eisenhower-matrix.jpg">
+      <img src = "./eisenhower-matrix.jpg" class = "header-image">
       <a class = "more-inf" href = "https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class = "centered-main-page-element">
       <p id = "topSectionForAddingElementToList">
-          <label for = "new-task">Add Item</label>
+          <label class = "task" for = "new-task">Add Item</label>
           <div class = "task-row-wrapper">
-            <input id = "new-task" class = "task" type = "text">
-            <button>Add</button>
+            <input class = "entry-field task" id = "new-task" type = "text">
+            <button class = "button">Add</button>
           </div>
       </p>
-      <h3>Todo</h3>
-      <ul id = "incompleteTasks">
-        <li>
-            <input type = "checkbox">
+      <h3 class = "head-list">Todo</h3>
+      <ul class = "list" id = "incompleteTasks">
+        <li class = "item">
+            <input class = "entry-field" type = "checkbox">
             <label class = "task">Pay Bills</label>
-            <input class = "task" type = "text">
-            <button class = "edit">Edit</button>
-            <button class = "delete">
-              <img src = "./remove.svg">
+            <input class = "entry-field task" type = "text">
+            <button class = "button edit">Edit</button>
+            <button class = "button delete">
+              <img src = "./remove.svg" class = "btn-image">
             </button>
         </li>
-        <li class = "editMode">
-            <input type = "checkbox">
+        <li class = "item editMode">
+            <input class = "entry-field" type = "checkbox">
             <label class = "task">Go Shopping</label>
-            <input type = "text" value="Go Shopping" class="task">
-            <button class = "edit">Save</button>
-            <button class = "delete">
-              <img src = "./remove.svg">
+            <input class="entry-field task" type = "text" value="Go Shopping">
+            <button class = "button edit">Save</button>
+            <button class = "button delete">
+              <img src = "./remove.svg" class = "btn-image">
             </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id = "completed-tasks">
-        <li>
-          <input type = "checkbox" checked>
+      <h3 class = "head-list">Completed</h3>
+      <ul class = "list" id = "completed-tasks">
+        <li class = item>
+          <input class = "entry-field" type = "checkbox" checked>
           <label class = "task">See the Doctor</label>
-          <input type = "text" class = "task">
-          <button class = "edit">Edit</button>
-          <button class = "delete">
-            <img src = "./remove.svg">
+          <input class = "entry-field task" type = "text">
+          <button class = "button edit">Edit</button>
+          <button class = "button delete">
+            <img src = "./remove.svg" class = "btn-image">
           </button>
         </li>
       </ul>
