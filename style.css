@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header-image {
+.header__image {
   width: 100%;
 }
 
-.more-inf {
+.header__more-inf {
   font-family: "fantasy", "cursive";
 }
 
