@@ -18,7 +18,7 @@
         <label class = "task" for = "new-task">
           <h1 class = "title">Add Item</h1>
         </label>
-        <div class = "task-row-wrapper">
+        <div class = "entry-wrap">
           <input class = "entry-field task" id = "new-task" type = "text">
           <button class = "button">Add</button>
         </div>
@@ -26,22 +26,22 @@
       <section class = "todo"> 
         <h2 class = "head-list">Todo</h2>
         <ul class = "list" id = "in-complete-tasks">
-          <li class = "item">
-            <input class = "entry-field" type = "checkbox">
+          <li class = "list__item">
+            <input class = "entry-field entry-field_checkbox" type = "checkbox">
             <label class = "task">Pay Bills</label>
-            <input class = "entry-field task" type = "text">
-            <button class = "button edit">Edit</button>
-            <button class = "button delete">
-              <img src = "./remove.svg" class = "btn-image" alt = "icon">
+            <input class = "entry-field entry-field_text" type = "text">
+            <button class = "button button_edit">Edit</button>
+            <button class = "button button_delete">
+              <img src = "./remove.svg" class = "button__image" alt = "icon">
             </button>
           </li>
-          <li class = "item edit-mode">
-            <input class = "entry-field" type = "checkbox">
+          <li class = "list__item list__item_edit-mode">
+            <input class = "entry-field entry-field_checkbox" type = "checkbox">
             <label class = "task">Go Shopping</label>
-            <input class="entry-field task" type = "text" value = "Go Shopping">
-            <button class = "button edit">Save</button>
-            <button class = "button delete">
-              <img src = "./remove.svg" class = "btn-image" alt = "icon">
+            <input class="entry-field entry-field_text-edit" value = "Go Shopping" type = "text">
+            <button class = "button button_edit">Save</button>
+            <button class = "button button_delete">
+              <img src = "./remove.svg" class = "button__image" alt = "icon">
             </button>
           </li>
         </ul>
@@ -49,13 +49,13 @@
       <section class = "complete">
         <h2 class = "head-list">Completed</h2>
         <ul class = "list" id = "completed-tasks">
-          <li class = item>
-            <input class = "entry-field" type = "checkbox" checked>
+          <li class = list__item>
+            <input class = "entry-field entry-field_checkbox" type = "checkbox" checked>
             <label class = "task">See the Doctor</label>
-            <input class = "entry-field task" type = "text">
-            <button class = "button edit">Edit</button>
-            <button class = "button delete">
-              <img src = "./remove.svg" class = "btn-image" alt = "icon">
+            <input class = "entry-field entry-field_text" type = "text">
+            <button class = "button button_edit">Edit</button>
+            <button class = "button button_delete">
+              <img src = "./remove.svg" class = "button__image" alt = "icon">
             </button>
           </li>
         </ul>
