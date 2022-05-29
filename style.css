@@ -171,11 +171,11 @@
   display: none;
 }
 
-.list > .editMode > .entry-field[type = "text"] {
+.list > .edit-mode > .entry-field[type = "text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list > .editMode > .task {
+.list > .edit-mode > .task {
   display: none;
 }
