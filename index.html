@@ -15,11 +15,11 @@
     </header>
     <main class = "main-element">
       <section class = "add-input" id = "input-line">
-        <label class = "task" for = "new-task">
+        <label class = "task task_form" for = "new-task">
           <h1 class = "title">Add Item</h1>
         </label>
         <div class = "entry-wrap">
-          <input class = "entry-field task" id = "new-task" type = "text">
+          <input class = "entry-field entry-field_new-task" id = "new-task" type = "text">
           <button class = "button">Add</button>
         </div>
       </section> 
@@ -28,7 +28,7 @@
         <ul class = "list" id = "in-complete-tasks">
           <li class = "list__item">
             <input class = "entry-field entry-field_checkbox" type = "checkbox">
-            <label class = "task">Pay Bills</label>
+            <label class = "task task_form-list">Pay Bills</label>
             <input class = "entry-field entry-field_text" type = "text">
             <button class = "button button_edit">Edit</button>
             <button class = "button button_delete">
@@ -37,7 +37,7 @@
           </li>
           <li class = "list__item list__item_edit-mode">
             <input class = "entry-field entry-field_checkbox" type = "checkbox">
-            <label class = "task">Go Shopping</label>
+            <label class = "task task_form-list-edit">Go Shopping</label>
             <input class="entry-field entry-field_text-edit" value = "Go Shopping" type = "text">
             <button class = "button button_edit">Save</button>
             <button class = "button button_delete">
@@ -51,7 +51,7 @@
         <ul class = "list" id = "completed-tasks">
           <li class = list__item>
             <input class = "entry-field entry-field_checkbox" type = "checkbox" checked>
-            <label class = "task">See the Doctor</label>
+            <label class = "task task_completed">See the Doctor</label>
             <input class = "entry-field entry-field_text" type = "text">
             <button class = "button button_edit">Edit</button>
             <button class = "button button_delete">

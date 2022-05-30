@@ -35,7 +35,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButtonImg.setAttribute("alt", "icon")
     label.innerText=taskString;
-    label.className='task';
+    label.className='task task_form-list';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -99,10 +99,13 @@ var editTask=function(){
         label.innerText=editInput.value;
         editInput.classList.add("entry-field_text")
         editInput.classList.remove("entry-field_text-edit")
+        label.classList.remove("task_form-list-edit")
+        label.classList.add("task_form-list")
         editBtn.innerText="Edit";
     }else{
         editInput.value=label.innerText;
         editInput.classList.remove("entry-field_text")
+        label.classList.add("task_form-list-edit")
         editInput.classList.add("entry-field_text-edit")
         editBtn.innerText="Save";
     }
@@ -129,6 +132,9 @@ var taskCompleted=function(){
     console.log("Complete Task...");
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.remove("task_form-list")
+    label.classList.add("task_completed")
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -141,6 +147,9 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.remove("task_completed")
+    label.classList.add("task_form-list")
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
