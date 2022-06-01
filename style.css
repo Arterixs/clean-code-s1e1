@@ -96,6 +96,7 @@
   text-transform: uppercase;
 }
 
+.entry-field,
 .entry-field_text-edit,
 .entry-field_text {
   margin: 0;
